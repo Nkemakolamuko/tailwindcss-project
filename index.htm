@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent | Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/03ecdfcafe.js" crossorigin="anonymous"></script>
 </head>
 <body class="bg-slate-950">
 
-<section class="bg-slate-900 text-white sticky top-0">
+<section class="bg-slate-900 text-white sticky top-0 z-40">
     <nav class="flex flex-wrap items-center justify-between  px-40 py-1">
-        <h2 class="text-3xl my-5 !text-[#38bdf8] animate-pulse" >N-VINCENT-N</h2>
+        <h2 class="text-3xl my-5 !text-[#38bdf8] " >N-VINCENT-N</h2>
         <ul class="flex my-5">
             <li class="px-4 border-x border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#">HOME</a></li>
-            <li class="px-4 border-r border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#">ABOUT</a></li>
+            <li class="px-4 border-r border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#about">ABOUT</a></li>
             <li class="px-4 border-r border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#">SKILLS</a></li>
             <li class="px-4 border-r border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#">CONTACT</a></li>
             <li class="px-4 border-r border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#">TESTIMONIAL</a></li>
@@ -30,7 +31,7 @@
         <div class=" align-center">
             <h1 class="text-7xl pt-32">Welcome To My Page</h1>
             <p class="text-2xl py-7">My name is NKEM VINCENT NWEKE and I'm a Frontend Developer. Below are some more details about me.</p>
-            <a href="article.html" class="rounded-t-lg block border-0 bg-sky-700 hover:bg-sky-500/[.5] w-32 h-10 text-center justify-center">About Me</a>
+            <a href="article.html" class="rounded-t-lg block border-0 bg-sky-700 hover:bg-sky-500/[.5] w-32 h-10 text-center justify-center animate-pulse" id="about">About Me</a>
         </div>
             <img  class="h-30 w-full pt-16" src="Images/Me-3.png" alt="My Image">
     </header>
@@ -38,7 +39,20 @@
 
 <!-- About Me -->
 <section>
-    
+    <main class="px-40 text-white py-10">
+        <div class="px-16 pt-14 border rounded-3xl text-sky-700 bg-white shadow-2xl shadow-cyan-500/50 pb-14">
+            <h2 class="text-5xl text-center pb-5">About me</h2>
+            <p class="py-3 text-xl"> Hello there, I'm Nkem Vincent Nweke, a prospective Software Developer at TIIDELab and TheOdinProject. With over half a year experience working with HTML5, CSS3, TailwindCSS, JavaScript, then Git and GitHub. 
+                I've been able to successfully apply the skills mentioned above to build several personal projects, including a NEWS Website, A Travel Agency site, a Login Form and a host of other projects that can be found in my GitHub Repository and below this page.</p>
+                
+                <p class="py-3 text-2xl underline"><a href="https://github.com/Nkemakolamuko">{ https://github.com/Nkemakolamuko }</a></p>
+
+                <p class="py-3 text-2xl">With a completed non-certification course with CS50 in Computer Science, I was able to understand and apply what I learnt in building a website. Also, I took a 6 months private training in Public Speaking. 
+                
+                When I'm not coding, you can find me partaking in outdoor activities, and also capturing moments with my camera, or immersing myself in a captivating book. 📚 
+                Ready to embark on an exciting coding adventure? Let's connect and build something amazing together! ✨ </p>
+        </div>
+    </main>
 </section>
 </body>
 </html>
