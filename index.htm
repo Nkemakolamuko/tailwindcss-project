@@ -4,32 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vincent | Home</title>
+    <link rel="shortcut icon" href="Images/Browser-img.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/03ecdfcafe.js" crossorigin="anonymous"></script>
+    <style>
+        @keyframes typewriter {
+          from {
+            width: 0;
+          }
+          to {
+            width: 75%;
+          }
+        }
+
+        /* Add animation properties */
+        .typewriter {
+            animation: typewriter 3s steps(40, end) infinite;
+            white-space: wrap; /* Prevent line breaks in the animation */
+            overflow: hidden; /* Hide overflowing text during animation */
+            border-right: 2px solid rgb(24, 163, 255); /* Blinking cursor effect */
+        }
+    </style>
 </head>
 <body class="bg-slate-950">
 
 <section class="bg-slate-900 text-white sticky top-0 z-40 shadow-xl shadow-cyan-500/50">
-    <nav class="flex flex-wrap items-center justify-between  px-16 py-1">
-        <h2 class="text-3xl my-5 !text-[#38bdf8] font-bold" >N-VINCENT-N</h2>
+    <nav class="flex-wrap items-center px-16 py-1 justify-between">
+        <div class="flex !items-center">
+            <img class="w-10 h-12" src="Images/Browser-img.png">
+        <h2 class="text-3xl !text-[#38bdf8] font-bold" >INCENT</h2>
+        </div>
         <ul class="flex my-5 font-medium">
-            <li class="px-4 border-x border-y-0 hover:bg-sky-200/[.5] py-5"><a href="/index.htm">HOME</a></li>
-            <li class="px-4 border-r border-y-0 hover:bg-sky-300/[.5] py-5"><a href="#about">ABOUT</a></li>
-            <li class="px-4 border-r border-y-0 hover:bg-sky-400/[.5] py-5"><a href="#skills">SKILLS</a></li>
-            <li class="px-4 border-r border-y-0 hover:bg-sky-500/[.5] py-5"><a href="#contact">CONTACT</a></li>
-            <li class="px-4 border-r border-y-0 hover:bg-sky-600/[.5] py-5"><a href="#testimonial">TESTIMONIAL</a></li>
-            <li class="px-4 border-y-0 hover:bg-sky-700/[.5] py-5"><a href="#projects">PROJECTS</a></li>
+            <a href="/index.htm"><li class="px-4 border-x border-y-0 hover:bg-sky-200/[.5] py-5">HOME</li></a>
+            <a href="#about"><li class="px-4 border-r border-y-0 hover:bg-sky-300/[.5] py-5">ABOUT</li></a>
+            <a href="#skills"><li class="px-4 border-r border-y-0 hover:bg-sky-400/[.5] py-5">SKILLS</li></a>
+            <a href="#contact"><li class="px-4 border-r border-y-0 hover:bg-sky-500/[.5] py-5">CONTACT</li></a>
+            <a href="#testimonials"><li class="px-4 border-r border-y-0 hover:bg-sky-600/[.5] py-5">TESTIMONIAL</li></a>
+            <a href="#projects"><li class="px-4 border-y-0 hover:bg-sky-700/[.5] py-5">PROJECTS</li></a>
         </ul>
     </nav>
 </section>
-    
-    
 
 <!-- HERO Section -->
 <section>
-    <header class="text-white px-48 pt-24 pb-16 grid grid-cols-2 gap-5 content-center">        
+    <header class="text-white px-48 pt-24 pb-16 grid grid-cols-2 gap-5 content-center">  
         <div class=" align-center justify-center">
-            <h1 class="text-7xl pb-5">Welcome To My Bio</h1>
+            <h1 class="typewriter text-7xl pb-5">Welcome...</h1>
             <p class="text-2xl py-7">My name is NKEM VINCENT NWEKE and I'm a Frontend Developer. Below are some more details about me.</p>
             <button class="text-center"><a href="article.html" class="rounded-lg block border-0 bg-[#1A73E8] hover:bg-sky-500/[.5] w-40 h-16 py-3 text-2xl" id="about">About Me</a></button>
         </div>
@@ -47,50 +67,161 @@
             <p class="py-3 text-xl font-medium"> Hello there, I'm Nkem Vincent Nweke, a prospective Software Developer at TIIDELab and TheOdinProject. With over half a year experience working with HTML5, CSS3, TailwindCSS, JavaScript, then Git and GitHub. 
                 I've been able to successfully apply the skills mentioned above to build several personal projects, including a NEWS Website, A Travel Agency site, a Login Form and a host of other projects that can be found in my GitHub Repository and below this page.</p>
                 
-                <p class="py-3 text-2xl underline"><a href="https://github.com/Nkemakolamuko">{ https://github.com/Nkemakolamuko }</a></p>
+                <p class="py-3 text-2xl underline"><a href="https://github.com/Nkemakolamuko" target="_blank">{ https://github.com/Nkemakolamuko }</a></p>
 
                 <p class="py-3 text-xl font-medium">With a completed non-certification course with CS50 in Computer Science, I was able to understand and apply what I learnt in building a website. Also, I took a 6 months private training in Public Speaking. 
-                
-                When I'm not coding, you can find me partaking in outdoor activities, and also capturing moments with my camera, or immersing myself in a captivating book. 📚 
+                <br>
+                When I'm not coding, you can find me partaking in outdoor activities, and also capturing moments with my camera, or immersing myself in a captivating book. 
                 Ready to embark on an exciting coding adventure? Let's connect and build something amazing together! ✨ </p>
         </div>
 
     </main>
 
     <!-- Skills -->
-    <main class="px-16" id="skills">
-        <div class="text-white pb-16">
-            <div class="font-bold pb-5 text-5xl">My Current Skills</div>
+    <div id="skills"></div>
+    <main class="px-16">
+        <div class="text-white pb-24 grid pt-40">
+            <div class="font-bold pb-16 text-5xl text-center">My Current Skills</div>
+            
+        <div class="grid grid-cols-7 gap-4 content-center">
             <div>
-                <h2 class="text-3xl">Git</h2>
-                <img src="" alt="Git">
+                <h2 class="text-3xl text-center pb-8 font-medium">Git</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/git-2.png" alt="Git">
             </div>
             <div>
-                <h2 class="text-3xl">GitHub</h2>
-                <img src="" alt="GitHub">
+                <h2 class="text-3xl text-center pb-8 font-medium">GitHub</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/github.png" alt="GitHub">
             </div>
             <div>
-                <h2 class="text-3xl">HTML5</h2>
-                <img src="" alt="HTML5">
+                <h2 class="text-3xl text-center pb-8 font-medium">HTML5</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/HTML.png" alt="HTML5">
             </div>
             <div>
-                <h2 class="text-3xl">CSS3</h2>
-                <img src="" alt="CSS3">
+                <h2 class="text-3xl text-center pb-8 font-medium">CSS3</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/CSS.png" alt="CSS3">
             </div>
             <div>
-                <h2 class="text-3xl">JavaScript</h2>
-                <img src="" alt="JavaScript">
+                <h2 class="text-3xl text-center pb-8 font-medium">JavaScript</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/JS.png" alt="JavaScript">
             </div>
             <div>
-                <h2 class="text-3xl">TailwindCSS</h2>
-                <img src="" alt="TailwindCSS">
+                <h2 class="text-3xl text-center pb-8 font-medium">TailwindCSS</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/TW.png" alt="TailwindCSS">
             </div>
             <div>
-                <h2 class="text-3xl">ReactJS</h2>
-                <img src="" alt="ReactJS">
+                <h2 class="text-3xl text-center pb-8 font-medium">ReactJS</h2>
+                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/REACT.png" alt="ReactJS">
             </div>
+
+        </div>    
+            
         </div>
     </main>
+
+<!-- Testimonial -->
+<section id="testimonials" class="px-16 py-16">
+    <div class="text-white">
+        <h1 class="font-bold text-7xl text-center pb-16">Reviews</h1>
+        <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <div class="pt-6 text-center space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium px-16">
+                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium pb-8">
+                <div class="text-sky-500 dark:text-sky-400">
+                  Aderoju Shamshudeen
+                </div>
+                <div class="text-slate-400 dark:text-slate-500">
+                  Staff Engineer, Nigeria
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+          <br>
+          <br>
+        <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <div class="pt-6 text-center space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium px-16">
+                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium pb-8">
+                <div class="text-sky-500 dark:text-sky-400">
+                  Aderoju Shamshudeen
+                </div>
+                <div class="text-slate-400 dark:text-slate-500">
+                  Staff Engineer, Nigeria
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+          <br>
+          <br>
+        <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <div class="pt-6 text-center space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium px-16">
+                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium pb-8">
+                <div class="text-sky-500 dark:text-sky-400">
+                  Aderoju Shamshudeen
+                </div>
+                <div class="text-slate-400 dark:text-slate-500">
+                  Staff Engineer, Nigeria
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+          <br>
+          <br>
+        <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <div class="pt-6 text-center space-y-4">
+              <blockquote>
+                <p class="text-lg font-medium px-16">
+                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                </p>
+              </blockquote>
+              <figcaption class="font-medium pb-8">
+                <div class="text-sky-500 dark:text-sky-400">
+                  Aderoju Shamshudeen
+                </div>
+                <div class="text-slate-400 dark:text-slate-500">
+                  Staff Engineer, Nigeria
+                </div>
+              </figcaption>
+            </div>
+          </figure>
+        
+       <div class="grid grid-cols-2 grid-rows-2 gap-4 px-16 py-16">
+        <!-- <div class="font-medium text-xl">
+            <img src="Images/Me-2.png" class="h-20 w-20 rounded-full" alt="Aisha"><p>Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!</p>
+            
+        </div>
+        <div class=" font-medium text-xl ">
+            <img src="Images/Me-2.png" class="h-20 w-20 rounded-full" alt="Vika">
+            <p>I was looking for a vacation in Italy that would be both relaxing and exciting, and I was so impressed with the service that I received from Vin's Travels. They were able to help me find a perfect itinerary that included everything I wanted to see and do, and they were always available to answer my questions. The vacation was even better than I imagined, and I would definitely recommend Vin's Travels to anyone looking for a vacation in Italy.</p>
+        </div>
+        <div class="font-medium text-xl ">
+            <img src="Images/Me-2.png" class="h-20 w-20 rounded-full" alt="Aisha"><p>Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!</p>
+            
+        </div>
+        <div class=" font-medium text-xl ">
+            <img src="Images/Me-2.png" class="h-20 w-20 rounded-full" alt="Vika">
+            <p>I was looking for a vacation in Italy that would be both relaxing and exciting, and I was so impressed with the service that I received from Vin's Travels. They were able to help me find a perfect itinerary that included everything I wanted to see and do, and they were always available to answer my questions. The vacation was even better than I imagined, and I would definitely recommend Vin's Travels to anyone looking for a vacation in Italy.</p>
+        </div> -->
+       </div> 
+
+    </div>
+</section>
 
 <!-- Contact Section -->
     <main class="px-52 text-white pt-10 pb-16" id="contact">
