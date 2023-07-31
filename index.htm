@@ -24,6 +24,22 @@
             overflow: hidden; /* Hide overflowing text during animation */
             border-right: 2px solid rgb(24, 163, 255); /* Blinking cursor effect */
         }
+
+        /* Add this CSS to target the images inside the relative containers */
+          .relative img {
+            transition: opacity 0.3s ease;
+          }
+
+          /* Add this CSS to show the hover effect only on the images */
+          .relative:hover img {
+            opacity: 0.7; /* You can adjust the opacity value as per your preference */
+          }
+
+          /* Add this CSS to hide the hover effect on the group elements */
+          .relative:hover .group-hover\:opacity-100 {
+            opacity: 0;
+          }
+
     </style>
 </head>
 <body class="bg-slate-950">
@@ -49,7 +65,7 @@
         </div>
 
         <ul class="flex my-5 font-medium">
-            <a href="/index.htm"><li class="px-4 border-x border-y-0 hover:bg-sky-200/[.5] py-4">HOME</li></a>
+            <a href="index.htm"><li class="px-4 border-x border-y-0 hover:bg-sky-200/[.5] py-4">HOME</li></a>
             <a href="#about"><li class="px-4 border-r border-y-0 hover:bg-sky-300/[.5] py-4">ABOUT</li></a>
             <a href="#skills"><li class="px-4 border-r border-y-0 hover:bg-sky-400/[.5] py-4">SKILLS</li></a>
             <a href="#project"><li class="px-4 border-r border-y-0 hover:bg-sky-500/[.5] py-4">PROJECTS</li></a>
@@ -95,7 +111,7 @@
     <div id="skills"></div>
     <main class="px-16">
         <div class="text-white pb-16 grid pt-40">
-            <div class="font-bold pb-16 text-5xl text-center">My Current Skills</div>
+            <div class="font-bold pb-16 text-7xl text-center">My Current Skill Stack</div>
             
         <div class="grid grid-cols-7 gap-4 content-center">
             <div>
@@ -137,27 +153,47 @@
       <div class="px-16 pb-16">
         <h1 class="font-bold text-7xl text-white text-center pt-24 pb-16 ">Some Of My Projects</h1>
       <div class="grid  grid-cols-3 gap-8">
-        <div class="relative group text-center">
-          <img class="rounded-3xl" src="Images/pro-1.png" alt="" loading="lazy">
+
+        <div class=" text-center">
+          <a href="#" target="_blank">
+            <div class="relative group">
+            <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
           <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-            <span class="text-white font-medium text-xl">Click Me</span>
+            <span class="text-white font-medium text-2xl underline lowercase">NEWS SITE</span>
           </div>
-          <h2 class="text-white font-medium text-2xl pt-8">My NEWS Site</h2>
+          </div>
+          </a>
+          
+          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
         </div>
-        <div class="relative group text-center">
-          <img class="rounded-xl" src="Images/pro-1.png" alt="" loading="lazy">
+
+        <div class=" text-center">
+          <a href="#" target="_blank">
+            <div class="relative group">
+            <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
           <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-            <span class="text-white font-medium text-xl">Click Me</span>
+            <span class="text-white font-medium text-2xl lowercase underline">NEWS SITE</span>
           </div>
-          <h2 class="text-white font-medium text-2xl pt-8">My NEWS Site</h2>
+          </div>
+          </a>
+          
+          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
         </div>
-        <div class="relative group text-center">
-          <img class="rounded-3xl" src="Images/pro-1.png" alt="" loading="lazy">
+
+        <div class=" text-center">
+          <a href="#" target="_blank">
+            <div class="relative group">
+            <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
           <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-            <span class="text-white font-medium text-xl">Click Me</span>
+            <span class="text-white font-medium text-2xl underline lowercase">NEWS-SITE</span>
           </div>
-          <h2 class="text-white font-medium text-2xl pt-8">My NEWS Site</h2>
+          </div>
+          </a>
+          
+          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
         </div>
+
+        
       </div>
       </div>
       
@@ -235,28 +271,34 @@
 
 <!-- Contact Section -->
     <main class="px-52 text-white pt-10 pb-16" id="contact">
-        <div class="px-16 pt-14 pb-14 border rounded-3xl text-white bg-sky-700 shadow-2xl shadow-cyan-500/50">
+        <div class="px-16 pt-14 pb-14 border rounded-3xl text-white shadow-2xl shadow-cyan-500/50">
             <div>
-                <h1 class="font-bold pb-2 text-5xl text-center">Contact</h1>
+                <h1 class="font-bold pb-2 text-7xl text-center">Contact</h1>
                 <p class="pb-3 pt-1 text-2xl font-medium text-center">You can reach me on any of these Social Media handle for fast response!!</p>
             </div>
-            <div><h2 class="text-3xl font-bold"><a href="LinkedIn"><i class="fab fa-linkedin text-blue-300"></i> LinkedIn</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold"><a href="LinkedIn" target="_blank"><i class="fab fa-linkedin text-blue-300"></i> LinkedIn</a></h2></div>
             <hr>
-            <div><h2 class="text-3xl font-bold"><a href="Twitter"><i class="fab fa-twitter text-blue-800"></i> Twitter</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold"><a href="Twitter" target="_blank"><i class="fab fa-twitter text-blue-800"></i> Twitter</a></h2></div>
             <hr>
-            <div><h2 class="text-3xl font-bold"><a href="WhatsApp"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold"><a href="WhatsApp" target="_blank"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
             <hr>
-            <div><h2 class="text-3xl font-bold"><a href="mail"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold"><a href="mail" target="_blank"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
 
         </div>        
     </main>
 
-
-   
-
 </section>
 
+<!-- Footer Section -->
+<footer class="bg-gray-900 py-6">
+  <div class="text-white text-xl text-center font-light py-5">
+    <span>Nkem Vincent Nweke &copy; All Rights Reserved || 2023</span>
+  </div>
+</footer>
 
+
+
+<!-- JavaScript -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
   // Smooth Scroll
