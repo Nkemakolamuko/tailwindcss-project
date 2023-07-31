@@ -17,7 +17,6 @@
           }
         }
 
-        /* Add animation properties */
         .typewriter {
             animation: typewriter 3s steps(40, end) infinite;
             white-space: wrap; /* Prevent line breaks in the animation */
@@ -25,20 +24,18 @@
             border-right: 2px solid rgb(24, 163, 255); /* Blinking cursor effect */
         }
 
-        /* Add this CSS to target the images inside the relative containers */
           .relative img {
-            transition: opacity 0.3s ease;
+            transition: opacity 0.2s ease;
           }
 
-          /* Add this CSS to show the hover effect only on the images */
           .relative:hover img {
-            opacity: 0.7; /* You can adjust the opacity value as per your preference */
+            opacity: 0.7;
           }
 
-          /* Add this CSS to hide the hover effect on the group elements */
           .relative:hover .group-hover\:opacity-100 {
             opacity: 0;
           }
+
 
     </style>
 </head>
@@ -54,12 +51,11 @@
         <!-- Links -->
         <div class="relative">
           <!-- Contact link with dropdown trigger -->
-          <a href="#links" class="px-4 border-y-0 hover:bg-sky-700/[.5] py-4 font-medium text-2xl text-[#38bdf8]">Links</a>
+          <a href="#links" class="px-4 border-y-0 hover:bg-sky-700/[.5] py-4 font-medium text-2xl text-[#38bdf8]">Links <i class="fa-solid fa-chevron-up fa-rotate-180 " style="color: #00ddfa;"></i></a>
 
           <!-- Dropdown menu items -->
           <ul class="absolute right-0 z-10 hidden w-28 mt-2 bg-white border border-gray-300 rounded shadow">
-              <li><a href="#option1" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Resume</a></li>
-              <li><a href="#option2" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">CV</a></li>
+              <li><a href="https://drive.google.com/file/d/1ucKYXFydjzV2fUEReiesxxqhUBkJz5Xy/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Access CV</a></li>
               <li><a href="https://nkem-vincent.hashnode.dev/my-tiidelab-1" target="_blank" class="block px-4 py-2 text-gray-800 hover:bg-gray-200">Blog Post</a></li>
           </ul>
         </div>
@@ -80,8 +76,8 @@
     <header class="text-white px-48 pt-24 pb-16 grid grid-cols-2 gap-5 content-center">  
         <div class=" align-center justify-center pt-16">
             <h1 class="typewriter text-7xl pb-5">Welcome...</h1>
-            <p class="text-2xl py-7">My name is NKEM VINCENT NWEKE and I'm a Frontend Developer. Below are some more details about me.</p>
-            <button class="text-center"><a href="article.html" class="rounded-lg block border-0 bg-[#1A73E8] hover:bg-sky-500/[.5] w-40 h-16 py-3 text-2xl">About Me</a></button>
+            <p class="text-2xl py-7">My name is NKEM VINCENT NWEKE and I'm a Software Developer. Below are some more details about me.</p>
+            <button class="text-center"><a href="#about" class="rounded-lg block border-0 bg-[#1A73E8] hover:bg-sky-500/[.5] w-40 h-16 py-3 text-2xl">About Me</a></button>
         </div>
         <div class="">
             <img  class="h-30 w-full rounded-full" src="Images/Me-3.png" alt="My Image">
@@ -114,31 +110,31 @@
             <div class="font-bold pb-16 text-7xl text-center">My Current Skill Stack</div>
             
         <div class="grid grid-cols-7 gap-4 content-center">
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">Git</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/git-2.png" alt="Git">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">GitHub</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/github.png" alt="GitHub">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">HTML5</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/HTML.png" alt="HTML5">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">CSS3</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/CSS.png" alt="CSS3">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">JavaScript</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/JS.png" alt="JavaScript">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">TailwindCSS</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/TW.png" alt="TailwindCSS">
             </div>
-            <div>
+            <div class="hover:-translate-y-6">
                 <h2 class="text-3xl text-center pb-8 font-medium">ReactJS</h2>
                 <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/REACT.png" alt="ReactJS">
             </div>
@@ -155,33 +151,7 @@
       <div class="grid  grid-cols-3 gap-8">
 
         <div class=" text-center">
-          <a href="#" target="_blank">
-            <div class="relative group">
-            <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
-          <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-            <span class="text-white font-medium text-2xl underline lowercase">NEWS SITE</span>
-          </div>
-          </div>
-          </a>
-          
-          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
-        </div>
-
-        <div class=" text-center">
-          <a href="#" target="_blank">
-            <div class="relative group">
-            <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
-          <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
-            <span class="text-white font-medium text-2xl lowercase underline">NEWS SITE</span>
-          </div>
-          </div>
-          </a>
-          
-          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
-        </div>
-
-        <div class=" text-center">
-          <a href="#" target="_blank">
+          <a href="" target="_blank">
             <div class="relative group">
             <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
           <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
@@ -191,6 +161,32 @@
           </a>
           
           <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
+        </div>
+
+        <div class=" text-center">
+          <a href="https://vins-travels.vercel.app/" target="_blank">
+            <div class="relative group">
+            <img class="rounded-3xl " src="Images/project-2.png" alt="" loading="lazy">
+          <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
+            <span class="text-white font-medium text-2xl lowercase underline">TRAVEL-AGENCY-SITE</span>
+          </div>
+          </div>
+          </a>
+          
+          <h2 class="text-white font-medium text-2xl pt-8">TRAVEL AGENCY</h2>
+        </div>
+
+        <div class=" text-center">
+          <a href="https://vins-update.vercel.app/about.html" target="_blank">
+            <div class="relative group">
+            <img class="rounded-3xl " src="Images/project-3.png" alt="" loading="lazy">
+          <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
+            <span class="text-white font-medium text-2xl underline lowercase">ABOUT-PAGE</span>
+          </div>
+          </div>
+          </a>
+          
+          <h2 class="text-white font-medium text-2xl pt-8">ABOUT PAGE</h2>
         </div>
 
         
@@ -205,11 +201,11 @@
     <div class="text-white">
         <h1 class="font-bold text-7xl text-center pb-16 uppercase">Testimonials</h1>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Mr.Shams.jpg" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
                 <p class="text-lg font-medium px-16">
-                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                  “Nkem Vincent is such a great guy, he's outspoken and communicates effectively, with a great precision in his ability to ask meaningful questions when he dooesn't get something clearly. He's a great person to work with, he brings life to a boring gathering, I'd definitely recommend him and his services to anyone!”
                 </p>
               </blockquote>
               <figcaption class="font-medium pb-8">
@@ -225,11 +221,11 @@
           <br>
           <br>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/JamalFX.png" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
                 <p class="text-lg font-medium px-16">
-                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                  “I have been looking fir a developer to build a Website for my company, a good friend of mine recommended Vincent to us, it was one of the best decisions we've made in our Company. He's such a good Team player, works very well with the Project Manager and the entire design team, we've had zero complaints about him. Thank you for bring a part of our Company!”
                 </p>
               </blockquote>
               <figcaption class="font-medium pb-8">
@@ -245,11 +241,11 @@
           <br>
           <br>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Me-2.png" alt="" width="384" height="512">
+            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Untitled design (2).png" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
                 <p class="text-lg font-medium px-16">
-                  “Thanks to Vin's Travels services, studying in the UK became a breeze. They guided me through the application process, secured my accommodation, and provided invaluable support. I'm now living my dream studying abroad. Highly recommend their expertise to any aspiring international student!”
+                  “Vincent is Such and amazing human being. He delivered the project I gave him 4 days before the deadline. So I'd recommend him to anyone looking to build a personal blog like he did for me. He also is very good at communicating his opinions and suggestions. Overall, he's lovely!”
                 </p>
               </blockquote>
               <figcaption class="font-medium pb-8">
@@ -273,16 +269,16 @@
     <main class="px-52 text-white pt-10 pb-16" id="contact">
         <div class="px-16 pt-14 pb-14 border rounded-3xl text-white shadow-2xl shadow-cyan-500/50">
             <div>
-                <h1 class="font-bold pb-2 text-7xl text-center">Contact</h1>
+                <h1 class="font-bold pb-3 text-7xl text-center">Contact</h1>
                 <p class="pb-3 pt-1 text-2xl font-medium text-center">You can reach me on any of these Social Media handle for fast response!!</p>
             </div>
-            <div class="py-5"><h2 class="text-3xl font-bold"><a href="LinkedIn" target="_blank"><i class="fab fa-linkedin text-blue-300"></i> LinkedIn</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://www.linkedin.com/in/nkem-vincent-nweke/" target="_blank"><i class="fab fa-linkedin text-blue-800"></i> LinkedIn</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold"><a href="Twitter" target="_blank"><i class="fab fa-twitter text-blue-800"></i> Twitter</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://twitter.com/NwekeVincent14" target="_blank"><i class="fab fa-twitter text-blue-400"></i> Twitter</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold"><a href="WhatsApp" target="_blank"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://wa.me/message/C24IJ6RPOHZPC1" target="_blank"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold"><a href="mail" target="_blank"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
+            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="mailto:vintio234@gmail.com" target="_blank"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
 
         </div>        
     </main>
@@ -291,7 +287,7 @@
 
 <!-- Footer Section -->
 <footer class="bg-gray-900 py-6">
-  <div class="text-white text-xl text-center font-light py-5">
+  <div class="text-white text-2xl text-center font-normal py-5">
     <span>Nkem Vincent Nweke &copy; All Rights Reserved || 2023</span>
   </div>
 </footer>
