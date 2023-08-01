@@ -42,7 +42,7 @@
 <body class="bg-slate-950">
 
 <section class="bg-slate-900 text-white sticky top-0 z-40 shadow-xl shadow-cyan-500/50">
-    <nav class="flex flex-wrap items-center px-16 py-1 justify-between">
+    <nav class="flex flex-wrap items-center px-6 md:px-16 pt-4 pb-2 md:py-1 justify-between md:justify-between">
         <div class="flex !items-center">
             <img class="w-10 h-12" src="Images/Browser-img.png">
         <h2 class="text-3xl !text-[#38bdf8] font-bold" >INCENT</h2>
@@ -50,8 +50,7 @@
 
         <!-- Links -->
         <div class="relative">
-          <!-- Contact link with dropdown trigger -->
-          <a href="#links" class="px-4 border-y-0 hover:bg-sky-700/[.5] py-4 font-medium text-2xl text-[#38bdf8]">Links <i class="fa-solid fa-chevron-up fa-rotate-180 " style="color: #00ddfa;"></i></a>
+          <a href="#links" class="px-4 border-y-0 py-4 font-medium md:text-2xl text-xl text-[#38bdf8]">Links <i class="fa-solid fa-chevron-up fa-rotate-180 " style="color: #00ddfa;"></i></a>
 
           <!-- Dropdown menu items -->
           <ul class="absolute right-0 z-10 hidden w-28 mt-2 bg-white border border-gray-300 rounded shadow">
@@ -60,42 +59,43 @@
           </ul>
         </div>
 
-        <ul class="flex my-5 font-medium">
-            <a href="index.htm"><li class="px-4 border-x border-y-0 hover:bg-sky-200/[.5] py-4">HOME</li></a>
-            <a href="#about"><li class="px-4 border-r border-y-0 hover:bg-sky-300/[.5] py-4">ABOUT</li></a>
-            <a href="#skills"><li class="px-4 border-r border-y-0 hover:bg-sky-400/[.5] py-4">SKILLS</li></a>
-            <a href="#project"><li class="px-4 border-r border-y-0 hover:bg-sky-500/[.5] py-4">PROJECTS</li></a>
-            <a href="#testimonials"><li class="px-4 border-r border-y-0 hover:bg-sky-600/[.5] py-4">TESTIMONIAL</li></a>
-            <a href="#contact" class="px-4 border-y-0 hover:bg-sky-700/[.5] py-4">CONTACT</a>
+        <ul class="md:flex my-5 font-normal md:font-medium md:no-wrap grid grid-cols-3 md:mx-auto-0 ">
+            <a href="index.htm"><li class="px-4 border-x-0 md:border-x border-y-0 md:border-y-0 md:hover:bg-sky-200/[.5] py-1 md:py-4">HOME</li></a>
+            <a href="#about"><li class="px-4 border-x-0 md:border-x border-y-0 md:border-y-0 md:hover:bg-sky-300/[.5] py-1 md:py-4">ABOUT</li></a>
+            <a href="#skills"><li class="px-4 border-x-0 md:border-x border-y-0 md:border-y-0 md:hover:bg-sky-400/[.5] py-1 md:py-4">SKILLS</li></a>
+            <a href="#project"><li class="px-4 border-x-0 md:border-x border-y-0 md:border-y-0 md:hover:bg-sky-500/[.5] py-1 md:py-4">PROJECTS</li></a>
+            <a href="#contact" class="px-4 border-y-0 md:hover:bg-sky-700/[.5] py-1 md:py-4">CONTACT</a>
+            <a href="#testimonials"><li class="px-4 border-x-0 md:border-x border-y-0 md:border-y-0 md:hover:bg-sky-600/[.5] py-1 md:py-4">TESTIMONIAL</li></a>
+            
         </ul>
     </nav>
 </section>
 
 <!-- HERO Section -->
 <section>
-    <header class="text-white px-48 pt-24 pb-16 grid grid-cols-2 gap-5 content-center">  
+    <header class="text-white px-10 lg:pt-24 md:pt-20 md:px-48 pt-4 pb-8 md:p-16 grid grid-rows-2 md:grid-cols-2 gap-5 content-center">
         <div class=" align-center justify-center pt-16">
-            <h1 class="typewriter text-7xl pb-5">Welcome...</h1>
-            <p class="text-2xl py-7">My name is NKEM VINCENT NWEKE and I'm a Software Developer. Below are some more details about me.</p>
-            <button class="text-center"><a href="#about" class="rounded-lg block border-0 bg-[#1A73E8] hover:bg-sky-500/[.5] w-40 h-16 py-3 text-2xl">About Me</a></button>
+            <h1 class="typewriter text-4xl md:text-7xl pb-5">Welcome...</h1>
+            <p class="text-xl py-7 md:text-2xl">My name is NKEM VINCENT NWEKE and I'm a Software Developer. Below are some more details about me.</p>
+            <button class="text-center"><a href="#about" class="rounded-lg block border-0 bg-[#1A73E8] hover:bg-sky-500/[.5] w-32 md:w-40 md:h-16 h-10 py-1 md:py-3 text-xl md:text-2xl">About Me</a></button>
         </div>
         <div class="">
-            <img  class="h-30 w-full rounded-full" src="Images/Me-3.png" alt="My Image">
+            <img  class="h-30 w-full rounded-3xl md:rounded-full" src="Images/Me-3.png" alt="My Image">
         </div>
     </header>
 </section>
 
 <!-- About Me -->
 <section id="about">
-    <main class="px-52 text-white pt-10 pb-16">
-        <div class="px-16 pt-14 border rounded-3xl text-sky-700 bg-white shadow-2xl shadow-cyan-500/50 pb-14">
-            <h2 class="text-5xl text-center pb-5 uppercase font-bold">About me</h2>
-            <p class="py-3 text-xl font-medium"> Hello there, I'm Nkem Vincent Nweke, a prospective Software Developer at TIIDELab and TheOdinProject. With over half a year experience working with HTML5, CSS3, TailwindCSS, JavaScript, then Git and GitHub. 
+    <main class="px-8 md:px-52 text-white pt-10 pb-16">
+        <div class="px-5 md:px-16 pt-7 md:pt-14 border rounded-3xl text-sky-700 bg-white shadow-2xl shadow-cyan-500/50 pb-14">
+            <h2 class="text-3xl md:text-5xl text-center pb-3 md:pb-5 uppercase font-bold">About me</h2>
+            <p class="py-1 md:py-3 md:text-xl font-medium"> Hello there, I'm Nkem Vincent Nweke, a prospective Software Developer at TIIDELab and TheOdinProject. With over half a year experience working with HTML5, CSS3, TailwindCSS, JavaScript, then Git and GitHub. 
                 I've been able to successfully apply the skills mentioned above to build several personal projects, including a NEWS Website, A Travel Agency site, a Login Form and a host of other projects that can be found in my GitHub Repository and below this page.</p>
                 
-                <p class="py-3 text-2xl underline"><a href="https://github.com/Nkemakolamuko" target="_blank">{ https://github.com/Nkemakolamuko }</a></p>
+                <p class="py-3 md:text-2xl underline"><a href="https://github.com/Nkemakolamuko" target="_blank">https://github.com/Nkemakolamuko </a></p>
 
-                <p class="py-3 text-xl font-medium">With a completed non-certification course with CS50 in Computer Science, I was able to understand and apply what I learnt in building a website. Also, I took a 6 months private training in Public Speaking. 
+                <p class="py-1 md:py-3 md:text-xl font-medium">With a completed non-certification course with CS50 in Computer Science, I was able to understand and apply what I learnt in building a website. Also, I took a 6 months private training in Public Speaking. 
                 <br>
                 When I'm not coding, you can find me partaking in outdoor activities, and also capturing moments with my camera, or immersing myself in a captivating book. 
                 Ready to embark on an exciting coding adventure? Let's connect and build something amazing together! ✨ </p>
@@ -105,38 +105,38 @@
 
     <!-- Skills -->
     <div id="skills"></div>
-    <main class="px-16">
-        <div class="text-white pb-16 grid pt-40">
-            <div class="font-bold pb-16 text-7xl text-center">My Current Skill Stack</div>
+    <main class="px-8 md:px-16">
+        <div class="text-white pb-16 grid pt-12 md:pt-20 md:pt-40">
+            <div class="font-bold pb-8 md:pb-16 text-3xl md:text-7xl text-center">Current Skill Stack</div>
             
-        <div class="grid grid-cols-7 gap-4 content-center">
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-2 md:gap-4 items-center">
             <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">Git</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/git-2.png" alt="Git">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">Git</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40  rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/git-2.png" alt="Git">
+            </div>
+            <!-- <div class="hover:-translate-y-6">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">GitHub</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40  rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/github.png" alt="GitHub">
+            </div> -->
+            <div class="hover:-translate-y-6">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">HTML5</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/HTML.png" alt="HTML5">
             </div>
             <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">GitHub</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/github.png" alt="GitHub">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal md:font-medium">CSS3</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/CSS.png" alt="CSS3">
             </div>
             <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">HTML5</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/HTML.png" alt="HTML5">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">JavaScript</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/JS.png" alt="JavaScript">
             </div>
             <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">CSS3</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/CSS.png" alt="CSS3">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">TailwindCSS</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/TW.png" alt="TailwindCSS">
             </div>
             <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">JavaScript</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/JS.png" alt="JavaScript">
-            </div>
-            <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">TailwindCSS</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/TW.png" alt="TailwindCSS">
-            </div>
-            <div class="hover:-translate-y-6">
-                <h2 class="text-3xl text-center pb-8 font-medium">ReactJS</h2>
-                <img class="h-40 w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/REACT.png" alt="ReactJS">
+                <h2 class="text-xl md:text-3xl md:text-center pb-4 md:pb-8 font-normal  md:font-medium">ReactJS</h2>
+                <img class="h-20 md:h-40 w-20 md:w-40 rounded-full shadow-xl hover:shadow-blue-500/50" src="Images/REACT.png" alt="ReactJS">
             </div>
 
         </div>    
@@ -146,12 +146,12 @@
 
     <!-- Projects -->
     <main id="project" class="bg-gray-900">
-      <div class="px-16 pb-16">
-        <h1 class="font-bold text-7xl text-white text-center pt-24 pb-16 ">Some Of My Projects</h1>
-      <div class="grid  grid-cols-3 gap-8">
+      <div class="px-8 md:px-16 pb-8 md:pb-16">
+        <h1 class="font-bold text-4xl md:text-7xl text-white text-center pt-12 md:pt-24 pb-8 md:pb-16 ">Some Of My Projects</h1>
+      <div class="grid grid-rows-3 md:grid-cols-3 gap-8">
 
         <div class=" text-center">
-          <a href="" target="_blank">
+          <a href="https://vins-update.vercel.app/" target="_blank">
             <div class="relative group">
             <img class="rounded-3xl " src="Images/pro-1.png" alt="" loading="lazy">
           <div class="absolute inset-0 rounded-3xl bg-sky-500/50 opacity-0 group-hover:opacity-100 flex items-center justify-center">
@@ -160,7 +160,7 @@
           </div>
           </a>
           
-          <h2 class="text-white font-medium text-2xl pt-8">NEWS SITE</h2>
+          <h2 class="text-white font-medium md:text-2xl pt-8">NEWS SITE  - <span class="font-light">click on image</span></h2>
         </div>
 
         <div class=" text-center">
@@ -173,7 +173,7 @@
           </div>
           </a>
           
-          <h2 class="text-white font-medium text-2xl pt-8">TRAVEL AGENCY</h2>
+          <h2 class="text-white font-medium md:text-2xl pt-8">TRAVEL AGENCY  - <span class="font-light">click on image</span></h2>
         </div>
 
         <div class=" text-center">
@@ -186,7 +186,7 @@
           </div>
           </a>
           
-          <h2 class="text-white font-medium text-2xl pt-8">ABOUT PAGE</h2>
+          <h2 class="text-white font-medium md:text-2xl pt-8">ABOUT PAGE - <span class="font-light">click on image</span></h2>
         </div>
 
         
@@ -197,14 +197,14 @@
       
 
 <!-- Testimonial -->
-<section class="px-16 pt-40 pb-16" id="testimonials">
+<section class="px-4 md:px-16 pt-16 pb-16" id="testimonials">
     <div class="text-white">
-        <h1 class="font-bold text-7xl text-center pb-16 uppercase">Testimonials</h1>
+        <h1 class="font-bold text-3xl md:text-7xl text-center pb-10 uppercase">Testimonials</h1>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Mr.Shams.jpg" alt="" width="384" height="512">
+            <img class="w-52 h-auto pt-0 md:pt-0 rounded-2xl md:rounded-none mx-auto " src="Images/Mr.Shams.jpg" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium px-16">
+                <p class="text-lg font-normal md:font-bold px-8 md:px-16">
                   “Nkem Vincent is such a great guy, he's outspoken and communicates effectively, with a great precision in his ability to ask meaningful questions when he dooesn't get something clearly. He's a great person to work with, he brings life to a boring gathering, I'd definitely recommend him and his services to anyone!”
                 </p>
               </blockquote>
@@ -221,11 +221,11 @@
           <br>
           <br>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/JamalFX.png" alt="" width="384" height="512">
+            <img class="w-52 h-auto pt-0 md:pt-0 rounded-2xl md:rounded-none mx-auto" src="Images/JamalFX.png" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium px-16">
-                  “I have been looking fir a developer to build a Website for my company, a good friend of mine recommended Vincent to us, it was one of the best decisions we've made in our Company. He's such a good Team player, works very well with the Project Manager and the entire design team, we've had zero complaints about him. Thank you for bring a part of our Company!”
+                <p class="text-lg font-normal md:font-bold px-8 md:px-16">
+                  “I have been looking for a developer to build a Website for my company, a good friend of mine recommended Vincent to us, it was one of the best decisions we've made in our Company. He's such a good Team player, works very well with the Project Manager and the entire design team, we've had zero complaints about him. Thank you for bring a part of our Company!”
                 </p>
               </blockquote>
               <figcaption class="font-medium pb-8">
@@ -241,10 +241,10 @@
           <br>
           <br>
         <figure class="md:flex bg-slate-700 rounded-xl dark:bg-slate-800 hover:-translate-y-6 hover:bg-sky-800">
-            <img class="w-52 h-auto rounded-none mx-auto" src="Images/Untitled design (2).png" alt="" width="384" height="512">
+            <img class="w-52 h-auto pt-0 md:pt-0 rounded-2xl md:rounded-none mx-auto" src="Images/Untitled design (2).png" alt="" width="384" height="512">
             <div class="pt-6 text-center space-y-4">
               <blockquote>
-                <p class="text-lg font-medium px-16">
+                <p class="text-lg font-normal md:font-bold px-8 md:px-16">
                   “Vincent is Such and amazing human being. He delivered the project I gave him 4 days before the deadline. So I'd recommend him to anyone looking to build a personal blog like he did for me. He also is very good at communicating his opinions and suggestions. Overall, he's lovely!”
                 </p>
               </blockquote>
@@ -266,19 +266,19 @@
 </section>
 
 <!-- Contact Section -->
-    <main class="px-52 text-white pt-10 pb-16" id="contact">
-        <div class="px-16 pt-14 pb-14 border rounded-3xl text-white shadow-2xl shadow-cyan-500/50">
+    <main class="px-12 md:px-52 text-white pt-10 pb-16" id="contact">
+        <div class="px-4 md:px-16 pt-7 md:pt-14 pb-7 md:pb-14 border rounded-3xl text-white shadow-2xl shadow-cyan-500/50">
             <div>
-                <h1 class="font-bold pb-3 text-7xl text-center">Contact</h1>
-                <p class="pb-3 pt-1 text-2xl font-medium text-center">You can reach me on any of these Social Media handle for fast response!!</p>
+                <h1 class="font-bold pb-3 text-3xl md:text-7xl text-center">Contact</h1>
+                <p class="pb-3 pt-1 text-xl md:text-2xl text-center">You can reach me on any of these Social Media links below for fast response!!</p>
             </div>
-            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://www.linkedin.com/in/nkem-vincent-nweke/" target="_blank"><i class="fab fa-linkedin text-blue-800"></i> LinkedIn</a></h2></div>
+            <div class="py-5"><h2 class="text-xl md:text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://www.linkedin.com/in/nkem-vincent-nweke/" target="_blank"><i class="fab fa-linkedin text-blue-800"></i> LinkedIn</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://twitter.com/NwekeVincent14" target="_blank"><i class="fab fa-twitter text-blue-400"></i> Twitter</a></h2></div>
+            <div class="py-5"><h2 class="text-xl md:text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://twitter.com/NwekeVincent14" target="_blank"><i class="fab fa-twitter text-blue-400"></i> Twitter</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://wa.me/message/C24IJ6RPOHZPC1" target="_blank"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
+            <div class="py-5"><h2 class="text-xl md:text-3xl font-bold hover:text-sky-400 hover:underline"><a href="https://wa.me/message/C24IJ6RPOHZPC1" target="_blank"><i class="fab fa-whatsapp text-green-300"></i> WhatsApp</a></h2></div>
             <hr>
-            <div class="py-5"><h2 class="text-3xl font-bold hover:text-sky-400 hover:underline"><a href="mailto:vintio234@gmail.com" target="_blank"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
+            <div class="py-5"><h2 class="text-xl md:text-3xl font-bold hover:text-sky-400 hover:underline"><a href="mailto:vintio234@gmail.com" target="_blank"><i class="fa-solid fa-phone text-blue-800"></i> E-mail</a></h2></div>
 
         </div>        
     </main>
@@ -287,7 +287,7 @@
 
 <!-- Footer Section -->
 <footer class="bg-gray-900 py-6">
-  <div class="text-white text-2xl text-center font-normal py-5">
+  <div class="text-gray-500 md:text-xl text-center font-light md:font-normal py-2 md:py-5">
     <span>Nkem Vincent Nweke &copy; All Rights Reserved || 2023</span>
   </div>
 </footer>
